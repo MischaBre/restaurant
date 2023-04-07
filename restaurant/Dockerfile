@@ -15,7 +15,7 @@ RUN pip3 install -r requirements.txt
 
 USER uwsgi
 
-COPY --chown=uwsgi:uwsgi - restaurant
+COPY --chown=uwsgi:uwsgi . restaurant
 RUN mkdir restaurant/restaurants
 
 RUN cd /app/restaurant && npm install && npm run build
