@@ -1,0 +1,16 @@
+{
+  "status": "done",
+  "assets": {
+    "main-72943af850668fe919d2.js": {
+      "name": "main-72943af850668fe919d2.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/dist/assets/webpack_bundles/main-72943af850668fe919d2.js",
+      "publicPath": "http://localhost:8080/static/main-72943af850668fe919d2.js"
+    }
+  },
+  "chunks": {
+    "main": [
+      "main-72943af850668fe919d2.js"
+    ]
+  },
+  "publicPath": "http://localhost:8080/static/"
+}

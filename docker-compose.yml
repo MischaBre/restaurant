@@ -1,0 +1,37 @@
+version: '3'
+services:
+  django:
+    build: django
+    environment:
+      - VIRTUAL_HOST: restaurant.lisamichikoeln.com
+      - VIRTUAL_PORT: 8000
+      - LETSENCRYPT_HOST: restaurant.lisamichikoeln.com
+      - LETSENCRYPT_EMAIL: gemsa.michael@gmail.com
+    depends_on:
+      - db
+    volumes:
+      - restaurantdata:/app/django/restaurants
+    networks:
+      - nginx-proxy
+      - backend
+  db:
+    container_name: rest_db-1
+    image: postgres
+    restart: always
+    environment:
+      - POSTGRES_DB=rest_psql
+      - POSTGRES_USER=rest_user
+      - POSTGRES_PASSWORD=rest_lm
+    ports:
+      - '5432:5432'
+    volumes: 
+      - pgdata:/var/lib/postgresql/data
+    networks:
+      - backend
+networks:
+  backend:
+  nginx-proxy:
+    external: true
+volumes:
+  restaurantdata:
+  pgdata:
