@@ -13,6 +13,7 @@ COPY startup.sh .
 
 RUN pip3 install -r requirements.txt
 
+RUN useradd -ms /bin/bash  uwsgi
 USER uwsgi
 
 COPY --chown=uwsgi:uwsgi . restaurant
