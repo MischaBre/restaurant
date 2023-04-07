@@ -1,16 +1,17 @@
 version: '3'
 services:
   django:
-    build: django
+    container_name: restaurant
+    build: restaurant
     environment:
-      - VIRTUAL_HOST: restaurant.lisamichikoeln.com
-      - VIRTUAL_PORT: 8000
-      - LETSENCRYPT_HOST: restaurant.lisamichikoeln.com
-      - LETSENCRYPT_EMAIL: gemsa.michael@gmail.com
+      - VIRTUAL_HOST=restaurant.lisamichikoeln.com
+      - VIRTUAL_PORT=8000
+      - LETSENCRYPT_HOST=restaurant.lisamichikoeln.com
+      - LETSENCRYPT_EMAIL=gemsa.michael@gmail.com
     depends_on:
       - db
     volumes:
-      - restaurantdata:/app/django/restaurants
+      - restaurantdata:/app/restaurant/restaurants
     networks:
       - nginx-proxy
       - backend
