@@ -10,8 +10,8 @@ ENV NO_UPDATE_NOTIFIER true
 
 WORKDIR /app
 
-COPY ./requirements.txt ./requirements.txt
-COPY ./startup.sh ./requirements.txt
+COPY requirements.txt .
+COPY startup.sh .
 
 RUN pip install -r requirements.txt
 
