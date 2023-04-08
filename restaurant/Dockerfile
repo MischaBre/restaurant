@@ -25,4 +25,4 @@ RUN echo "yes" | python3 ./restaurant/manage.py collectstatic
 
 EXPOSE ${PORT}
 
-CMD ["bin/bash", "startup.sh"]
+CMD ["/bin/bash", "startup.sh"]
