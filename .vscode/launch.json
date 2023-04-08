@@ -17,19 +17,24 @@
             "justMyCode": true
         },
         {
-            "name": "Webpack",
-            "type": "node",
+            "name": "Webpack Dev",
+            "type": "node-terminal",
             "request": "launch",
-            "program": "${workspaceFolder}/restaurant/node_modules/webpack-dev-server/bin/webpack-dev-server",
+            "command": "npm run dev",
             "cwd": "${workspaceFolder}/restaurant/",
-            "console": "internalConsole",
-            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "name": "Webpack Prod",
+            "type": "node-terminal",
+            "request": "launch",
+            "command": "npm run prod",
+            "cwd": "${workspaceFolder}/restaurant/",
         }
     ],
     "compounds": [
         {
-          "name": "Fullstack",
-          "configurations": ["Django", "Webpack"],
+          "name": "Fullstack Dev",
+          "configurations": ["Django", "Webpack Dev"],
           "stopAll": true
         }
     ]

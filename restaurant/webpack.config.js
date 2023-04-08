@@ -3,15 +3,14 @@ const webpack = require('webpack');
 const BundleTracker = require('webpack-bundle-tracker');
 
 module.exports = {
-  mode: process.env.PRODUCTIVE ? 'production' : 'development',
+  mode: 'development',
   context: __dirname,
-  entry: './src/index.js',
+  entry: './src/js/index.js',
   output: {
-    path: path.resolve('./dist/assets/webpack_bundles/'),
-    publicPath: (process.env.PRODUCTIVE ? '' : 'http://localhost:8080') + '/static/',
+    path: path.resolve('./bundles/dev/'),
     filename: "[name]-[hash].js"
   },
   plugins: [
-    new BundleTracker({filename: './webpack-stats.json'})
+    new BundleTracker({filename: './webpack-dev.stats.json'})
   ],
 };

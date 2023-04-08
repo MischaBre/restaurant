@@ -25,9 +25,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = 'PRODUCTIVE' in os.environ.keys()
 
-ALLOWED_HOSTS = ['localhost']
+ALLOWED_HOSTS = []
+
+if DEBUG:
+    ALLOWED_HOSTS.append('localhost')
 
 
 # Application definition
@@ -126,10 +129,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
-
-STATICFILES_DIRS = (
-    Path(BASE_DIR, 'dist/assets/'),
-)
+STATIC_ROOT = '/app/static'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
@@ -138,12 +138,17 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 # WEBPACK CONFIG
+STATICFILES_DIRS = (
+    Path(BASE_DIR, 'bundles'),
+)
 
 WEBPACK_LOADER = {
   'DEFAULT': {
     'CACHE': not DEBUG,
-    'STATS_FILE': Path(BASE_DIR, 'webpack-stats.json'),
+    'BUNDLE_DIR_NAME': 'dist/' if not DEBUG else 'dev/',
+    'STATS_FILE': Path(BASE_DIR, 'webpack-prod.stats.json' if not DEBUG else 'webpack-dev.stats.json'),
     'POLL_INTERVAL': 0.1,
     'IGNORE': [r'.+\.hot-update.js', r'.+\.map'],
+    'LOADER_CLASS': 'webpack_loader.loader.WebpackLoader',
   }
 }

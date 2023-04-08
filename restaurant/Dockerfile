@@ -19,8 +19,6 @@ USER uwsgi
 COPY --chown=uwsgi:uwsgi . restaurant
 RUN mkdir restaurant/restaurants
 
-RUN cd /app/restaurant && npm install && npm run build
-
 RUN echo "yes" | python3 ./restaurant/manage.py collectstatic
 
 EXPOSE ${PORT}

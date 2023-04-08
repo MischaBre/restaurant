@@ -1,0 +1,14 @@
+{
+  "status": "done",
+  "assets": {
+    "main-2a4e25ac755cb7872c6d.js": {
+      "name": "main-2a4e25ac755cb7872c6d.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dist/main-2a4e25ac755cb7872c6d.js"
+    }
+  },
+  "chunks": {
+    "main": [
+      "main-2a4e25ac755cb7872c6d.js"
+    ]
+  }
+}
