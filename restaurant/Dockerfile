@@ -1,4 +1,4 @@
-FROM python:3.11-buster
+FROM python:3.11-slim-buster
 
 RUN apt-get update
 
@@ -8,8 +8,8 @@ ENV NO_UPDATE_NOTIFIER true
 
 WORKDIR /app
 
-COPY requirements.txt .
-COPY startup.sh .
+COPY ./requirements.txt ./requirements.txt
+COPY ./startup.sh ./requirements.txt
 
 RUN pip3 install -r requirements.txt
 
