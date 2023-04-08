@@ -88,8 +88,8 @@ DATABASES = {
         'NAME': 'rest_psql',
         'USER': 'rest_user',
         'PASSWORD': 'rest_lm',
-        'HOST': 'localhost',
-        'PORT': '',
+        'HOST': 'db',
+        'PORT': '5432',
     }
 }
 
