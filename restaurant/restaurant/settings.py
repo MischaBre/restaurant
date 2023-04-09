@@ -32,6 +32,9 @@ ALLOWED_HOSTS = []
 if DEBUG:
     ALLOWED_HOSTS.append('localhost')
 
+if 'VIRTUAL_HOST' in os.environ:
+    ALLOWED_HOSTS.append(os.environ['VIRTUAL_HOST'])
+
 
 # Application definition
 
