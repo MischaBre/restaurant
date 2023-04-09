@@ -1,6 +1,6 @@
 #!/bin/bash
 PROJECTNAME=restaurant
-PORT=80
+PORT=8000
 PROJECTDIR="/app/restaurant"
 
 python3 restaurant/manage.py migrate
@@ -13,6 +13,6 @@ uwsgi --plugins python3 \
       --env DJANGO_SETTINGS_MODULE=$PROJECTNAME.settings \
       --uid 1000 \
       --gid 1000 \
-      --http-socket "0.0.0.0:$PORT" \
-      --check-static "/app" \
+      --http-socket 0.0.0.0:$PORT \
+      --check-static /app \
       --vacuum
