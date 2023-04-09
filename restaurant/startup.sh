@@ -14,5 +14,5 @@ uwsgi --plugins python3 \
       --wsgi "$PROJECTNAME.wsgi:application" \
       --env "DJANGO_SETTINGS_MODULE=$PROJECTNAME.settings" \
       --http-socket "0.0.0.0:$PORT" \
-      --check-static "/app" \
+      --check-static "/app/restaurant/static" \
       --vacuum
