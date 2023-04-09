@@ -5,7 +5,7 @@ services:
     build: restaurant
     environment:
       - VIRTUAL_HOST=restaurant.lisamichikoeln.local
-      - VIRTUAL_PORT=80
+      - VIRTUAL_PORT=8000
       - LETSENCRYPT_HOST=restaurant.lisamichikoeln.local
       - LETSENCRYPT_EMAIL=gemsa.michael@gmail.com
     depends_on:
