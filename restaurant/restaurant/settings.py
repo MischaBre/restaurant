@@ -143,7 +143,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # WEBPACK CONFIG
 STATICFILES_DIRS = (
     Path(BASE_DIR, 'bundles'),
-    Path(BASE_DIR, 'static'),
 )
 
 WEBPACK_LOADER = {
