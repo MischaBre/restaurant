@@ -29,6 +29,11 @@ module.exports = {
       }
     ]
   },
+  resolve: {
+    alias: {
+      'vue$': 'vue/dist/vue.esm.js'
+    }
+  },
   entry: './src/index.js',
   output: {
     path: path.resolve('./bundles/dev/'),

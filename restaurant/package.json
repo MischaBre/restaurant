@@ -12,7 +12,7 @@
   "author": "Michael Breyer",
   "license": "ISC",
   "devDependencies": {
-    "vue-loader": "^15.10.1",
+    "vue-loader": "^15.9.8",
     "vue-template-compiler": "^2.7.14",
     "webpack": "^5.78.0",
     "webpack-bundle-tracker": "^1.8.1",
