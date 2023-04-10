@@ -1,14 +1,28 @@
 {
   "status": "done",
   "assets": {
-    "main-5ae5708838724e42b853.js": {
-      "name": "main-5ae5708838724e42b853.js",
-      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-5ae5708838724e42b853.js"
+    "main-0ce313d2e3485b70b9c1.js": {
+      "name": "main-0ce313d2e3485b70b9c1.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-0ce313d2e3485b70b9c1.js"
+    },
+    "main-10c7408f8fa2741faee7.js": {
+      "name": "main-10c7408f8fa2741faee7.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-10c7408f8fa2741faee7.js"
+    },
+    "main-19111c5dda375bf4ea57.js": {
+      "name": "main-19111c5dda375bf4ea57.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-19111c5dda375bf4ea57.js"
+    },
+    "main-e905596f2bbd0165f8eb.js": {
+      "name": "main-e905596f2bbd0165f8eb.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-e905596f2bbd0165f8eb.js"
     }
   },
   "chunks": {
     "main": [
-      "main-5ae5708838724e42b853.js"
+      "main-10c7408f8fa2741faee7.js"
     ]
-  }
+  },
+  "error": "ModuleNotFoundError",
+  "message": "Module not found: Error: Can't resolve './node_modules/vue/dist/vue.js' in '/Users/michaelgemsa/projects/restaurant/restaurant/src'"
 }

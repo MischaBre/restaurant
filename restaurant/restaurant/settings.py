@@ -91,7 +91,7 @@ DATABASES = {
         'NAME': 'rest_psql',
         'USER': 'rest_user',
         'PASSWORD': 'rest_lm',
-        'HOST': 'db',
+        'HOST': 'db' if not DEBUG else 'localhost',
         'PORT': '5432',
     }
 }
