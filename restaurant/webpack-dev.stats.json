@@ -1,14 +1,14 @@
 {
   "status": "done",
   "assets": {
-    "main-99494e5cfa0d19fdf74e.js": {
-      "name": "main-99494e5cfa0d19fdf74e.js",
-      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-99494e5cfa0d19fdf74e.js"
+    "main-295b8ae3c0b03b1db9db.js": {
+      "name": "main-295b8ae3c0b03b1db9db.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-295b8ae3c0b03b1db9db.js"
     }
   },
   "chunks": {
     "main": [
-      "main-99494e5cfa0d19fdf74e.js"
+      "main-295b8ae3c0b03b1db9db.js"
     ]
   }
 }

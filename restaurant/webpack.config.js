@@ -37,7 +37,8 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: path.resolve('./bundles/dev/'),
-    filename: "[name]-[hash].js"
+    filename: "[name]-[hash].js",
+    clean: true,
   },
   plugins: [
     new BundleTracker({filename: './webpack-dev.stats.json'}),
