@@ -1,18 +1,18 @@
 {
   "status": "done",
   "assets": {
-    "main-424c5000f1f53694a5c1.js": {
-      "name": "main-424c5000f1f53694a5c1.js",
-      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dist/main-424c5000f1f53694a5c1.js"
+    "main-952957e7b7350cd44085.js": {
+      "name": "main-952957e7b7350cd44085.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dist/main-952957e7b7350cd44085.js"
     },
-    "main-424c5000f1f53694a5c1.js.LICENSE.txt": {
-      "name": "main-424c5000f1f53694a5c1.js.LICENSE.txt",
-      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dist/main-424c5000f1f53694a5c1.js.LICENSE.txt"
+    "main-952957e7b7350cd44085.js.LICENSE.txt": {
+      "name": "main-952957e7b7350cd44085.js.LICENSE.txt",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dist/main-952957e7b7350cd44085.js.LICENSE.txt"
     }
   },
   "chunks": {
     "main": [
-      "main-424c5000f1f53694a5c1.js"
+      "main-952957e7b7350cd44085.js"
     ]
   }
 }
