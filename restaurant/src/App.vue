@@ -1,48 +1,43 @@
 <template>
-	<div>
+	<div class="d-flex flex-column">
 		<menubar></menubar>
-		<Map></Map>
+		<div class="content">
+			<component :is="activeitem"></component>
+		</div>	
 	</div>
 </template>
 
 <script>
-	import Map from './components/map.vue'
-	import menubar from './components/menu.vue'
-
+	import restMap from './components/map.vue';
+	import restList from './components/list.vue';
+	import restAdd from './components/add.vue';
+	import menubar from './components/menu.vue';
+	
 	export default {
 		name: 'App',
 		components: {
-			menubar,
-        	Map
-     	}
+			'menubar': menubar,
+			'restList': restList,
+			'restAdd': restAdd,
+        	'restMap': restMap,
+     	},
+		computed: {
+			activeitem() {
+				return this.$store.getters.activeitem;
+			}
+		}
 	}
 </script>
 
 <style scoped>
-	header {
-		line-height: 1.5;
-	}
+.content {
+	margin: 1rem;
+	padding: 2rem;
 
-	.logo {
-		display: block;
-		margin: 0 auto 2rem;
-	}
-
+	border-radius: 2rem;
+	background-color: whitesmoke;
+}
 	@media (min-width: 1024px) {
-		header {
-			display: flex;
-			place-items: center;
-			padding-right: calc(var(--section-gap) / 2);
-		}
-
-		.logo {
-			margin: 0 2rem 0 0;
-		}
-
-		header .wrapper {
-			display: flex;
-			place-items: flex-start;
-			flex-wrap: wrap;
-		}
+		/*non mobile design */
 	}
 </style>

@@ -1,6 +1,11 @@
 <template>
-    <div class="menubar">
-        Malina ist süs!
+    <div class="menubar bg-dark text-white">
+        <h1>Lieblingsrestaurants</h1>
+        <b-nav pills align="right">
+            <b-nav-item v-for="item of menuitems" :active="activeitem == item.name" @click="navClick(item.name)">
+                <b-icon :icon="item.icon"></b-icon>
+            </b-nav-item>
+        </b-nav>
     </div>
 </template>
 
@@ -11,24 +16,31 @@
             return {
             };
         },
+        computed: {
+            menuitems() {
+                return this.$store.getters.menuitems;
+            },
+            activeitem() {
+                return this.$store.getters.activeitem;
+            }
+        },
+        methods: {
+            navClick: function (payload) {
+                this.$store.commit('activeitem', payload);
+            }
+        }
 
     }
 </script>
 
 <style scoped>
     .menubar {
-        min-height: 100;
-        min-width: 300;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
 
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 1;
-
-        margin: 1rem;
         padding: 1rem;
-        border-radius: 1rem;
 
-        background-color: whitesmoke;
+        background-color: palevioletred;
     }
 </style>

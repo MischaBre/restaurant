@@ -1,14 +1,324 @@
 {
   "status": "done",
   "assets": {
-    "main-295b8ae3c0b03b1db9db.js": {
-      "name": "main-295b8ae3c0b03b1db9db.js",
-      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-295b8ae3c0b03b1db9db.js"
+    "main-035fe110813e9181de72.js": {
+      "name": "main-035fe110813e9181de72.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-035fe110813e9181de72.js"
+    },
+    "main-04b6e1b74bf95ec0d681.js": {
+      "name": "main-04b6e1b74bf95ec0d681.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-04b6e1b74bf95ec0d681.js"
+    },
+    "main-05876f2c8cbb0cfe58b5.js": {
+      "name": "main-05876f2c8cbb0cfe58b5.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-05876f2c8cbb0cfe58b5.js"
+    },
+    "main-0962eaff79d12a84791f.js": {
+      "name": "main-0962eaff79d12a84791f.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-0962eaff79d12a84791f.js"
+    },
+    "main-0c5ea2ab5462cf904167.js": {
+      "name": "main-0c5ea2ab5462cf904167.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-0c5ea2ab5462cf904167.js"
+    },
+    "main-10d0136009ffb674468a.js": {
+      "name": "main-10d0136009ffb674468a.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-10d0136009ffb674468a.js"
+    },
+    "main-10e202faf5a5627cb815.js": {
+      "name": "main-10e202faf5a5627cb815.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-10e202faf5a5627cb815.js"
+    },
+    "main-1313c102fa9d67d552ce.js": {
+      "name": "main-1313c102fa9d67d552ce.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-1313c102fa9d67d552ce.js"
+    },
+    "main-1d1bfd1cf8759c457720.js": {
+      "name": "main-1d1bfd1cf8759c457720.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-1d1bfd1cf8759c457720.js"
+    },
+    "main-21b0a92fc98348bb72c6.js": {
+      "name": "main-21b0a92fc98348bb72c6.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-21b0a92fc98348bb72c6.js"
+    },
+    "main-295c80ef7deb88a6c8c9.js": {
+      "name": "main-295c80ef7deb88a6c8c9.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-295c80ef7deb88a6c8c9.js"
+    },
+    "main-2a6e4927d120ddaf1d85.js": {
+      "name": "main-2a6e4927d120ddaf1d85.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-2a6e4927d120ddaf1d85.js"
+    },
+    "main-2cb14740c48fa0fa07f4.js": {
+      "name": "main-2cb14740c48fa0fa07f4.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-2cb14740c48fa0fa07f4.js"
+    },
+    "main-2d72ff5dd4f14816403b.js": {
+      "name": "main-2d72ff5dd4f14816403b.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-2d72ff5dd4f14816403b.js"
+    },
+    "main-3155c6374ecd82a4ac85.js": {
+      "name": "main-3155c6374ecd82a4ac85.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-3155c6374ecd82a4ac85.js"
+    },
+    "main-32fe3ec4a9c52ec57dcb.js": {
+      "name": "main-32fe3ec4a9c52ec57dcb.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-32fe3ec4a9c52ec57dcb.js"
+    },
+    "main-340a0f6fd43ccfceea5d.js": {
+      "name": "main-340a0f6fd43ccfceea5d.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-340a0f6fd43ccfceea5d.js"
+    },
+    "main-359850cfc2a414055ab3.js": {
+      "name": "main-359850cfc2a414055ab3.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-359850cfc2a414055ab3.js"
+    },
+    "main-3771d4e74857a57a31b6.js": {
+      "name": "main-3771d4e74857a57a31b6.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-3771d4e74857a57a31b6.js"
+    },
+    "main-384a30061fd1250107a5.js": {
+      "name": "main-384a30061fd1250107a5.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-384a30061fd1250107a5.js"
+    },
+    "main-40053ff6ebcc5acbd82f.js": {
+      "name": "main-40053ff6ebcc5acbd82f.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-40053ff6ebcc5acbd82f.js"
+    },
+    "main-403801d018085953d4b3.js": {
+      "name": "main-403801d018085953d4b3.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-403801d018085953d4b3.js"
+    },
+    "main-48145dccd3cd74816d81.js": {
+      "name": "main-48145dccd3cd74816d81.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-48145dccd3cd74816d81.js"
+    },
+    "main-4a47936d6afae429a3ac.js": {
+      "name": "main-4a47936d6afae429a3ac.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-4a47936d6afae429a3ac.js"
+    },
+    "main-4b20b87b723c0efb5ad6.js": {
+      "name": "main-4b20b87b723c0efb5ad6.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-4b20b87b723c0efb5ad6.js"
+    },
+    "main-4dd96ab9edf1d20c8c72.js": {
+      "name": "main-4dd96ab9edf1d20c8c72.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-4dd96ab9edf1d20c8c72.js"
+    },
+    "main-5241d8d006514defac03.js": {
+      "name": "main-5241d8d006514defac03.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-5241d8d006514defac03.js"
+    },
+    "main-53ba268915caad12fecb.js": {
+      "name": "main-53ba268915caad12fecb.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-53ba268915caad12fecb.js"
+    },
+    "main-53fc0ec9a354cceaacae.js": {
+      "name": "main-53fc0ec9a354cceaacae.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-53fc0ec9a354cceaacae.js"
+    },
+    "main-5add49872e274a5f017e.js": {
+      "name": "main-5add49872e274a5f017e.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-5add49872e274a5f017e.js"
+    },
+    "main-5f3e206ac4dfbb9a2613.js": {
+      "name": "main-5f3e206ac4dfbb9a2613.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-5f3e206ac4dfbb9a2613.js"
+    },
+    "main-62152d1addad9f980f60.js": {
+      "name": "main-62152d1addad9f980f60.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-62152d1addad9f980f60.js"
+    },
+    "main-62a91e0f7a5d7417e977.js": {
+      "name": "main-62a91e0f7a5d7417e977.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-62a91e0f7a5d7417e977.js"
+    },
+    "main-646b481a226874471822.js": {
+      "name": "main-646b481a226874471822.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-646b481a226874471822.js"
+    },
+    "main-6601eee6eace5023d9f7.js": {
+      "name": "main-6601eee6eace5023d9f7.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-6601eee6eace5023d9f7.js"
+    },
+    "main-6eb78b8c86cd8ddbee30.js": {
+      "name": "main-6eb78b8c86cd8ddbee30.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-6eb78b8c86cd8ddbee30.js"
+    },
+    "main-6f6d6730b2a53bce1350.js": {
+      "name": "main-6f6d6730b2a53bce1350.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-6f6d6730b2a53bce1350.js"
+    },
+    "main-7b8161e26f0047175cbe.js": {
+      "name": "main-7b8161e26f0047175cbe.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-7b8161e26f0047175cbe.js"
+    },
+    "main-7fe2291172f234a45d39.js": {
+      "name": "main-7fe2291172f234a45d39.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-7fe2291172f234a45d39.js"
+    },
+    "main-820e9c531a49f4e9b91a.js": {
+      "name": "main-820e9c531a49f4e9b91a.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-820e9c531a49f4e9b91a.js"
+    },
+    "main-89a9e259d4e4b687b5f3.js": {
+      "name": "main-89a9e259d4e4b687b5f3.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-89a9e259d4e4b687b5f3.js"
+    },
+    "main-8b10bdd55af828f93342.js": {
+      "name": "main-8b10bdd55af828f93342.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-8b10bdd55af828f93342.js"
+    },
+    "main-8ba1278fa1ef3b49fff0.js": {
+      "name": "main-8ba1278fa1ef3b49fff0.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-8ba1278fa1ef3b49fff0.js"
+    },
+    "main-90883f72105a4e32b470.js": {
+      "name": "main-90883f72105a4e32b470.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-90883f72105a4e32b470.js"
+    },
+    "main-916ccde31d01b08bf4c1.js": {
+      "name": "main-916ccde31d01b08bf4c1.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-916ccde31d01b08bf4c1.js"
+    },
+    "main-9382f5cdbbaee7b5534b.js": {
+      "name": "main-9382f5cdbbaee7b5534b.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-9382f5cdbbaee7b5534b.js"
+    },
+    "main-99eb02b70da7ec7b3e1f.js": {
+      "name": "main-99eb02b70da7ec7b3e1f.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-99eb02b70da7ec7b3e1f.js"
+    },
+    "main-a062ecae6362bc0102b9.js": {
+      "name": "main-a062ecae6362bc0102b9.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-a062ecae6362bc0102b9.js"
+    },
+    "main-a4014d270cf60f8a5f82.js": {
+      "name": "main-a4014d270cf60f8a5f82.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-a4014d270cf60f8a5f82.js"
+    },
+    "main-a95c5d1b2faeb47a8d42.js": {
+      "name": "main-a95c5d1b2faeb47a8d42.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-a95c5d1b2faeb47a8d42.js"
+    },
+    "main-ac58bbc1435ab10518a8.js": {
+      "name": "main-ac58bbc1435ab10518a8.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-ac58bbc1435ab10518a8.js"
+    },
+    "main-aca060e9c79d5f53d4be.js": {
+      "name": "main-aca060e9c79d5f53d4be.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-aca060e9c79d5f53d4be.js"
+    },
+    "main-accdcfae492161fab39a.js": {
+      "name": "main-accdcfae492161fab39a.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-accdcfae492161fab39a.js"
+    },
+    "main-b4e08bb3124b766ac0bd.js": {
+      "name": "main-b4e08bb3124b766ac0bd.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-b4e08bb3124b766ac0bd.js"
+    },
+    "main-b73dbd414516896b2226.js": {
+      "name": "main-b73dbd414516896b2226.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-b73dbd414516896b2226.js"
+    },
+    "main-b842470a12c9e1b52019.js": {
+      "name": "main-b842470a12c9e1b52019.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-b842470a12c9e1b52019.js"
+    },
+    "main-b9708bd777186738d037.js": {
+      "name": "main-b9708bd777186738d037.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-b9708bd777186738d037.js"
+    },
+    "main-bce3509847dd31030072.js": {
+      "name": "main-bce3509847dd31030072.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-bce3509847dd31030072.js"
+    },
+    "main-bf529813b6258935f009.js": {
+      "name": "main-bf529813b6258935f009.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-bf529813b6258935f009.js"
+    },
+    "main-bf70c7981f9a262008a6.js": {
+      "name": "main-bf70c7981f9a262008a6.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-bf70c7981f9a262008a6.js"
+    },
+    "main-c844d8d5a22a6c59ab49.js": {
+      "name": "main-c844d8d5a22a6c59ab49.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-c844d8d5a22a6c59ab49.js"
+    },
+    "main-c9230cf6759feac79172.js": {
+      "name": "main-c9230cf6759feac79172.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-c9230cf6759feac79172.js"
+    },
+    "main-d0e5651a71baea9d108c.js": {
+      "name": "main-d0e5651a71baea9d108c.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-d0e5651a71baea9d108c.js"
+    },
+    "main-d3d21b8fe1d0c800f9cb.js": {
+      "name": "main-d3d21b8fe1d0c800f9cb.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-d3d21b8fe1d0c800f9cb.js"
+    },
+    "main-d6fae5dfeaf49fdd14d3.js": {
+      "name": "main-d6fae5dfeaf49fdd14d3.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-d6fae5dfeaf49fdd14d3.js"
+    },
+    "main-daaf8b8185eff81f5591.js": {
+      "name": "main-daaf8b8185eff81f5591.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-daaf8b8185eff81f5591.js"
+    },
+    "main-db15e3801b6295366775.js": {
+      "name": "main-db15e3801b6295366775.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-db15e3801b6295366775.js"
+    },
+    "main-de11051ea309bb80657e.js": {
+      "name": "main-de11051ea309bb80657e.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-de11051ea309bb80657e.js"
+    },
+    "main-e1da7e412736b4e0b76e.js": {
+      "name": "main-e1da7e412736b4e0b76e.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-e1da7e412736b4e0b76e.js"
+    },
+    "main-e57e6c1e548b4efa97f3.js": {
+      "name": "main-e57e6c1e548b4efa97f3.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-e57e6c1e548b4efa97f3.js"
+    },
+    "main-ef55c1120ad6b42f0c0f.js": {
+      "name": "main-ef55c1120ad6b42f0c0f.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-ef55c1120ad6b42f0c0f.js"
+    },
+    "main-f2c61a688974aa875deb.js": {
+      "name": "main-f2c61a688974aa875deb.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-f2c61a688974aa875deb.js"
+    },
+    "main-f4ab4d6db4485d15d5ec.js": {
+      "name": "main-f4ab4d6db4485d15d5ec.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-f4ab4d6db4485d15d5ec.js"
+    },
+    "main-f560d31db0694ef2b0f9.js": {
+      "name": "main-f560d31db0694ef2b0f9.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-f560d31db0694ef2b0f9.js"
+    },
+    "main-f97f4c6993e92cfee28b.js": {
+      "name": "main-f97f4c6993e92cfee28b.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-f97f4c6993e92cfee28b.js"
+    },
+    "main-fa8bf570a1a6ead5316b.js": {
+      "name": "main-fa8bf570a1a6ead5316b.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-fa8bf570a1a6ead5316b.js"
+    },
+    "main-fc69e9d989d47dea89e9.js": {
+      "name": "main-fc69e9d989d47dea89e9.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-fc69e9d989d47dea89e9.js"
+    },
+    "main-fefa58459dba15ac4e63.js": {
+      "name": "main-fefa58459dba15ac4e63.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-fefa58459dba15ac4e63.js"
     }
   },
   "chunks": {
     "main": [
-      "main-295b8ae3c0b03b1db9db.js"
+      "main-d0e5651a71baea9d108c.js"
     ]
-  }
+  },
+  "error": "ModuleBuildError",
+  "message": "Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: /Users/michaelgemsa/projects/restaurant/restaurant/src/index.js: Unexpected token, expected \",\" (19:31)\n\n  17 |     },\n  18 |     getters: {\n> 19 |         nav: state => state.nav;\n     |                                ^\n  20 |     }\n  21 |     mutations: {\n  22 |       increment (state) {\n    at instantiate (/Users/michaelgemsa/projects/restaurant/restaurant/node_modules/@babel/parser/lib/index.js:653:32)\n    at constructor (/Users/michaelgemsa/projects/restaurant/restaurant/node_modules/@babel/parser/lib/index.js:947:12)\n    at Parser.raise (/Users/michaelgemsa/projects/restaurant/restaurant/node_modules/@babel/parser/lib/index.js:3271:19)\n    at Parser.unexpected (/Users/michaelgemsa/projects/restaurant/restaurant/node_modules/@babel/parser/lib/index.js:3301:16)\n    at Parser.expect (/Users/michaelgemsa/projects/restaurant/restaurant/node_modules/@babel/parser/lib/index.js:3643:28)\n    at Parser.parseObjectLike (/Users/michaelgemsa/projects/restaurant/restaurant/node_modules/@babel/parser/lib/index.js:11647:14)\n    at Parser.parseExprAtom (/Users/michaelgemsa/projects/restaurant/restaurant/node_modules/@babel/parser/lib/index.js:11167:23)\n    at Parser.parseExprSubscripts (/Users/michaelgemsa/projects/restaurant/restaurant/node_modules/@babel/parser/lib/index.js:10880:23)\n    at Parser.parseUpdate (/Users/michaelgemsa/projects/restaurant/restaurant/node_modules/@babel/parser/lib/index.js:10863:21)\n    at Parser.parseMaybeUnary (/Users/michaelgemsa/projects/restaurant/restaurant/node_modules/@babel/parser/lib/index.js:10839:23)\n    at Parser.parseMaybeUnaryOrPrivate (/Users/michaelgemsa/projects/restaurant/restaurant/node_modules/@babel/parser/lib/index.js:10677:61)\n    at Parser.parseExprOps (/Users/michaelgemsa/projects/restaurant/restaurant/node_modules/@babel/parser/lib/index.js:10682:23)\n    at Parser.parseMaybeConditional (/Users/michaelgemsa/projects/restaurant/restaurant/node_modules/@babel/parser/lib/index.js:10659:23)\n    at Parser.parseMaybeAssign (/Users/michaelgemsa/projects/restaurant/restaurant/node_modules/@babel/parser/lib/index.js:10620:21)\n    at /Users/michaelgemsa/projects/restaurant/restaurant/node_modules/@babel/parser/lib/index.js:10590:39\n    at Parser.allowInAnd (/Users/michaelgemsa/projects/restaurant/restaurant/node_modules/@babel/parser/lib/index.js:12265:12)\n    at Parser.parseMaybeAssignAllowIn (/Users/michaelgemsa/projects/restaurant/restaurant/node_modules/@babel/parser/lib/index.js:10590:17)\n    at Parser.parseObjectProperty (/Users/michaelgemsa/projects/restaurant/restaurant/node_modules/@babel/parser/lib/index.js:11781:83)\n    at Parser.parseObjPropValue (/Users/michaelgemsa/projects/restaurant/restaurant/node_modules/@babel/parser/lib/index.js:11808:100)\n    at Parser.parsePropertyDefinition (/Users/michaelgemsa/projects/restaurant/restaurant/node_modules/@babel/parser/lib/index.js:11742:17)\n    at Parser.parseObjectLike (/Users/michaelgemsa/projects/restaurant/restaurant/node_modules/@babel/parser/lib/index.js:11657:21)\n    at Parser.parseExprAtom (/Users/michaelgemsa/projects/restaurant/restaurant/node_modules/@babel/parser/lib/index.js:11167:23)\n    at Parser.parseExprSubscripts (/Users/michaelgemsa/projects/restaurant/restaurant/node_modules/@babel/parser/lib/index.js:10880:23)\n    at Parser.parseUpdate (/Users/michaelgemsa/projects/restaurant/restaurant/node_modules/@babel/parser/lib/index.js:10863:21)\n    at Parser.parseMaybeUnary (/Users/michaelgemsa/projects/restaurant/restaurant/node_modules/@babel/parser/lib/index.js:10839:23)\n    at Parser.parseMaybeUnaryOrPrivate (/Users/michaelgemsa/projects/restaurant/restaurant/node_modules/@babel/parser/lib/index.js:10677:61)\n    at Parser.parseExprOps (/Users/michaelgemsa/projects/restaurant/restaurant/node_modules/@babel/parser/lib/index.js:10682:23)\n    at Parser.parseMaybeConditional (/Users/michaelgemsa/projects/restaurant/restaurant/node_modules/@babel/parser/lib/index.js:10659:23)\n    at Parser.parseMaybeAssign (/Users/michaelgemsa/projects/restaurant/restaurant/node_modules/@babel/parser/lib/index.js:10620:21)\n    at /Users/michaelgemsa/projects/restaurant/restaurant/node_modules/@babel/parser/lib/index.js:10590:39\n    at Parser.allowInAnd (/Users/michaelgemsa/projects/restaurant/restaurant/node_modules/@babel/parser/lib/index.js:12265:12)\n    at Parser.parseMaybeAssignAllowIn (/Users/michaelgemsa/projects/restaurant/restaurant/node_modules/@babel/parser/lib/index.js:10590:17)\n    at Parser.parseExprListItem (/Users/michaelgemsa/projects/restaurant/restaurant/node_modules/@babel/parser/lib/index.js:12017:18)\n    at Parser.parseExprList (/Users/michaelgemsa/projects/restaurant/restaurant/node_modules/@babel/parser/lib/index.js:11989:22)\n    at Parser.parseNew (/Users/michaelgemsa/projects/restaurant/restaurant/node_modules/@babel/parser/lib/index.js:11572:25)\n    at Parser.parseNewOrNewTarget (/Users/michaelgemsa/projects/restaurant/restaurant/node_modules/@babel/parser/lib/index.js:11567:17)\n    at Parser.parseExprAtom (/Users/michaelgemsa/projects/restaurant/restaurant/node_modules/@babel/parser/lib/index.js:11176:21)\n    at Parser.parseExprSubscripts (/Users/michaelgemsa/projects/restaurant/restaurant/node_modules/@babel/parser/lib/index.js:10880:23)\n    at Parser.parseUpdate (/Users/michaelgemsa/projects/restaurant/restaurant/node_modules/@babel/parser/lib/index.js:10863:21)\n    at Parser.parseMaybeUnary (/Users/michaelgemsa/projects/restaurant/restaurant/node_modules/@babel/parser/lib/index.js:10839:23)\n    at Parser.parseMaybeUnaryOrPrivate (/Users/michaelgemsa/projects/restaurant/restaurant/node_modules/@babel/parser/lib/index.js:10677:61)\n    at Parser.parseExprOps (/Users/michaelgemsa/projects/restaurant/restaurant/node_modules/@babel/parser/lib/index.js:10682:23)\n    at Parser.parseMaybeConditional (/Users/michaelgemsa/projects/restaurant/restaurant/node_modules/@babel/parser/lib/index.js:10659:23)\n    at Parser.parseMaybeAssign (/Users/michaelgemsa/projects/restaurant/restaurant/node_modules/@babel/parser/lib/index.js:10620:21)\n    at /Users/michaelgemsa/projects/restaurant/restaurant/node_modules/@babel/parser/lib/index.js:10590:39\n    at Parser.allowInAnd (/Users/michaelgemsa/projects/restaurant/restaurant/node_modules/@babel/parser/lib/index.js:12260:16)\n    at Parser.parseMaybeAssignAllowIn (/Users/michaelgemsa/projects/restaurant/restaurant/node_modules/@babel/parser/lib/index.js:10590:17)\n    at Parser.parseVar (/Users/michaelgemsa/projects/restaurant/restaurant/node_modules/@babel/parser/lib/index.js:13201:91)\n    at Parser.parseVarStatement (/Users/michaelgemsa/projects/restaurant/restaurant/node_modules/@babel/parser/lib/index.js:13040:10)\n    at Parser.parseStatementContent (/Users/michaelgemsa/projects/restaurant/restaurant/node_modules/@babel/parser/lib/index.js:12637:23)"
 }

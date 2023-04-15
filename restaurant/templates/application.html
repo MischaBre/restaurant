@@ -1,12 +1,13 @@
+<!doctype html>
 {% load render_bundle from webpack_loader %}
-
-<html>
+<html lang="de">
 <head>
     <title>Restaurant-Seite von Lisa und Michi (und Malina)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.css' rel='stylesheet' />
 </head>
 <body>
     <div id="app"></div>
-    {% render_bundle 'main' %}
+    {% render_bundle 'main' 'js' %}
 </body>
 </html>
