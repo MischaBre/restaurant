@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'restlist.apps.RestlistConfig',
     'webpack_loader',
+    'graphene_django'
 ]
 
 MIDDLEWARE = [
@@ -154,4 +155,10 @@ WEBPACK_LOADER = {
     'IGNORE': [r'.+\.hot-update.js', r'.+\.map'],
     'LOADER_CLASS': 'webpack_loader.loader.WebpackLoader',
   }
+}
+
+
+# GRAPHENE CONFIG
+GRAPHENE = {
+    "SCHEMA": "restaurant.schema.schema.schema"
 }
