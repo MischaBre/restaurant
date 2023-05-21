@@ -4,7 +4,7 @@
             <template #prepend>
                 <b-icon icon="search" class="border-circle m-2"/>
             </template>
-            <b-form-input v-model="filterString" placeholder="Filter Restaurants..." class="rounded-pill mx-2"></b-form-input>
+            <b-form-input v-model="filterString" debounce="500" placeholder="Filter Restaurants..." class="rounded-pill mx-2"></b-form-input>
             <template #append>
                 <b-button pill :variant="maxFilterBar ? 'secondary' : 'outline-secondary'" class="ml-2" @click="maximizeFilterBar">
                     <b-icon :icon="maxFilterBar ? 'chevron-double-up' : 'chevron-double-down'"/>

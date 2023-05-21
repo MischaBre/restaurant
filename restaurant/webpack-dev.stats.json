@@ -1,26 +1,18 @@
 {
   "status": "done",
   "assets": {
-    "main-1af0551385f0614e016c.js": {
-      "name": "main-1af0551385f0614e016c.js",
-      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-1af0551385f0614e016c.js"
+    "main-23d1bcfaa5143284044e.js": {
+      "name": "main-23d1bcfaa5143284044e.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-23d1bcfaa5143284044e.js"
     },
-    "main-aaf510b23f25b5e09498.js": {
-      "name": "main-aaf510b23f25b5e09498.js",
-      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-aaf510b23f25b5e09498.js"
-    },
-    "main-ac3672e13656dcd21436.js": {
-      "name": "main-ac3672e13656dcd21436.js",
-      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-ac3672e13656dcd21436.js"
-    },
-    "main-e7aa539ff54a78010b72.js": {
-      "name": "main-e7aa539ff54a78010b72.js",
-      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-e7aa539ff54a78010b72.js"
+    "main-30a46e2d8f5d1fe8ea59.js": {
+      "name": "main-30a46e2d8f5d1fe8ea59.js",
+      "path": "/Users/michaelgemsa/projects/restaurant/restaurant/bundles/dev/main-30a46e2d8f5d1fe8ea59.js"
     }
   },
   "chunks": {
     "main": [
-      "main-ac3672e13656dcd21436.js"
+      "main-23d1bcfaa5143284044e.js"
     ]
   }
 }
