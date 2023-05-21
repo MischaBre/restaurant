@@ -1,6 +1,7 @@
 <template>
     <div>
-        Add Restaurants
+        Add a Restaurant
+        
     </div>
 </template>
 

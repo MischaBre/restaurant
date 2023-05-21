@@ -10,7 +10,7 @@ class Query(graphene.ObjectType):
     allRestaurants = graphene.List(RestaurantType)
     restaurantByKeyword = graphene.List(RestaurantType,
                                         keyword=graphene.String(required=False),
-                                        visited=graphene.Boolean(required=False),
+                                        onlyNew=graphene.Boolean(required=False),
                                         rating=graphene.Int(required=False))
     restaurantById = graphene.List(RestaurantType,
                                    id=graphene.ID(required=True))
@@ -18,7 +18,7 @@ class Query(graphene.ObjectType):
     def resolve_allRestaurants(root, info):
         return Restaurant.objects.all()
 
-    def resolve_restaurantByKeyword(root, info, keyword=None, visited=None, rating=None):
+    def resolve_restaurantByKeyword(root, info, keyword=None, onlyNew=False, rating=0):
         result = Restaurant.objects.all()
         if keyword is not None:
             result = result.filter(
@@ -26,9 +26,9 @@ class Query(graphene.ObjectType):
                 Q(tags__icontains=keyword) |
                 Q(notes__icontains=keyword) |
                 Q(neighborhood__name__icontains=keyword))
-        if visited is not None:
-            result = result.filter(visited__isnull=not visited)
-        if rating is not None:
+        if onlyNew:
+            result = result.filter(visited__isnull=True)
+        if rating > 0:
             result = result.filter(rating__gte=rating)
         return result
 

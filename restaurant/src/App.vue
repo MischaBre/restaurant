@@ -31,11 +31,9 @@
 
 <style scoped>
 .content {
-	margin: 1rem;
-	padding: 2rem;
-
-	border-radius: 2rem;
-	background-color: whitesmoke;
+	margin: 2rem;
+	
+	
 }
 	@media (min-width: 1024px) {
 		/*non mobile design */

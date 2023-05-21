@@ -2,7 +2,7 @@
     <div class="menubar bg-dark text-white">
         <h1>Lieblingsrestaurants</h1>
         <b-nav pills align="right">
-            <b-nav-item v-for="item of menuitems" :active="activeitem == item.name" @click="navClick(item.name)">
+            <b-nav-item v-for="item of menuitems" :key="item.name" :active="activeitem == item.name" @click="navClick(item.name)">
                 <b-icon :icon="item.icon"></b-icon>
             </b-nav-item>
         </b-nav>
@@ -13,8 +13,7 @@
     export default {
         name: 'menubar',
         data() {
-            return {
-            };
+            return {};
         },
         computed: {
             menuitems() {
@@ -40,7 +39,5 @@
         align-items: end;
 
         padding: 1rem;
-
-        background-color: palevioletred;
     }
 </style>
