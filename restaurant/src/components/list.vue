@@ -13,8 +13,8 @@
         </b-input-group>
         <b-collapse id="filterBar" v-model="maxFilterBar">
             <div class="d-flex flex-row align-items-center justify-content-end">
-                <b-form-checkbox id="filterVisited" v-model="filterVisited" class="m-3">Show only new</b-form-checkbox>
                 <b-form-rating v-if="!filterVisited" show-clear id="filterRating" v-model="filterRating" inline class="m-2"></b-form-rating> 
+                <b-form-checkbox id="filterVisited" v-model="filterVisited" class="m-3">Show only <span class="text-primary">new</span></b-form-checkbox>
             </div>
         </b-collapse>
         <b-list-group class="mt-4">
