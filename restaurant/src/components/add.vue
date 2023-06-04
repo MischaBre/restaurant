@@ -43,7 +43,7 @@
                 <b-form-group 
                     id="input-visited-group"
                     label="Visited on:"
-                    label-for="input-visited"
+                    label-for="input-visited-date"
                     description="When did you visit the restaurant?">
                     <b-form-datepicker
                         id="input-visited-date"
@@ -93,7 +93,7 @@
 
 <script>
     import addMap from './addMap.vue';
-    import gql from 'graphql-tag'
+    import { mapActions } from 'vuex';
     export default {
         name: 'restAdd',
         components: {
@@ -123,6 +123,9 @@
             }
         },
         methods: {
+            ...mapActions({
+                add: 'restaurants/addRestaurant'
+            }),
             onSubmit(event) {
                 event.preventDefault();
                 if (!this.validateInput(this.restaurant)) {
@@ -176,58 +179,8 @@
                 return /[^a-zA-Z0-9]/.test(testString);
             },
             addRestaurant(restaurant) {
-                const visitedTimeStamp = Date.now()
-                const geolocationJSONString = JSON.stringify(restaurant.geolocation);
-                alert(geolocationJSONString);
-                this.$apollo.mutate({
-                    mutation: gql`
-                        mutation(
-                            $name: String!,
-                            $tags: [String!]!,
-                            $geolocation: JSONString!,
-                            $neighborhood: String!,
-                            $visited: DateTime,
-                            $rating: Int,
-                            $notes: String
-                        ) {
-                            createRestaurant (
-                                name: $name,
-                                tags: $tags,
-                                geolocation: $geolocation,
-                                neighborhood: $neighborhood,
-                                visited: $visited,
-                                rating: $rating,
-                                notes: $notes
-                            ) {
-                                restaurant {
-                                    id,
-                                    name,
-                                    tags,
-                                    geolocation,
-                                    neighborhood {
-                                        name,
-                                        level
-                                    },
-                                    visited,
-                                    rating,
-                                    notes
-                                }
-                            }
-                        }
-                    `,
-                    variables: {
-                        name: restaurant.name,
-                        tags: restaurant.tags,
-                        geolocation: geolocationJSONString,
-                        neighborhood: restaurant.neighborhood,
-                        visited: new Date(restaurant.visited),
-                        rating: restaurant.rating,
-                        notes: restaurant.notes || ''
-                    }
-                }).then((data) => {
-                    console.log(data);
-                }).catch((error) => {
-                    console.error(error);
+                this.add({
+                    restaurant: restaurant
                 });
             },
         }

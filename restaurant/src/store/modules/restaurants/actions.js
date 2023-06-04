@@ -1,36 +1,43 @@
-import gql from 'graphql-tag';
 import { apolloClient } from '../../../apollo';
+import { restaurantQuery, restaurantAdd } from './gql';
 
-const restaurantQuery = gql`query restaurants($keyword: String, $onlyNew: Boolean, $rating: Int) {
-    restaurants: restaurantByKeyword(keyword: $keyword, onlyNew: $onlyNew, rating: $rating) {
-        id,
-        name,
-        added,
-        visited,
-        rating,
-        tags,
-        neighborhood {
-            id,
-            name,
-            level
-        },
-        notes
-    }
-}`;
-
-const fetchRestaurants = async ({commit}, keyword, onlyNew, rating) => {
+const fetchRestaurants = async ({commit}, {keyword, onlyNew, rating}) => {
     const response = await apolloClient.query({
         query: restaurantQuery,
         variables: {
             keyword: keyword,
             onlyNew: onlyNew,
-            rating, rating
+            rating: rating || 0
         },
-        update: data => data.resaurants
     })
-    commit('restaurants', response.data);
+    commit('restaurants', response.data.restaurants);
 };
+
+const addRestaurant = async ({commit}, {restaurant}) => {
+    const geolocationJSONString = JSON.stringify(restaurant.geolocation);
+    apolloClient.mutate({
+        mutation: restaurantAdd,
+        variables: {
+            name: restaurant.name,
+            tags: restaurant.tags,
+            geolocation: geolocationJSONString,
+            neighborhood: restaurant.neighborhood,
+            visited: restaurant.visited && new Date(restaurant.visited),
+            rating: restaurant.rating,
+            notes: restaurant.notes || ''
+        }
+    }).then(({data}) => {
+        console.log(data.createRestaurant);
+        if (data.createRestaurant.ok) {
+            alert('Juhu');
+        }
+        
+    }).catch((error) => {
+        console.error(error);
+    });
+}
 
 export default {
     fetchRestaurants,
+    addRestaurant
 };

@@ -1,8 +1,7 @@
-const restaurants = (state, payload) => {
-    state.restaurants = payload.restaurants; 
-    //TODO maybe wrong!
+const mutations = {
+    restaurants: (state, payload) => {
+        state.restaurants = payload; 
+    },
 };
 
-export default {
-    restaurants,
-};
+export default mutations;

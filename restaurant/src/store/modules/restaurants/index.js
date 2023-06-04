@@ -10,7 +10,8 @@ const state =  {
         { id: 3, name: 'mock', rating: 5  },
         { id: 4, name: 'data', rating: 10  },
         */
-    ]
+    ],
+    fetching: false,
 };
 
 export default {

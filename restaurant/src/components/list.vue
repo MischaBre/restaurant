@@ -18,8 +18,15 @@
             </div>
         </b-collapse>
         <b-list-group class="mt-4">
-            <b-list-group-item v-for="restaurant of restaurants" :key="restaurant.id" class="d-flex align-items-center">
+            <b-list-group-item v-if="!loading" v-for="restaurant of restaurants" :key="restaurant.id" class="d-flex align-items-center">
                 <restaurant-list-item :restaurant="restaurant"></restaurant-list-item>
+            </b-list-group-item>
+            <b-list-group-item v-else class="d-flex align-items-center">
+                <div style="width:100%">
+                    <b-skeleton width="85%"></b-skeleton>
+                    <b-skeleton width="55%"></b-skeleton>
+                    <b-skeleton width="70%"></b-skeleton>
+                </div>
             </b-list-group-item>
         </b-list-group>
     </div>
@@ -27,25 +34,8 @@
 
 <script>
     import { mapGetters, mapActions } from 'vuex';
-    import gql from 'graphql-tag'
     import restaurantListItem from './restaurant-list-item.vue';
-
-    const restaurantQuery = gql`query restaurants($keyword: String, $onlyNew: Boolean, $rating: Int) {
-        restaurants: restaurantByKeyword(keyword: $keyword, onlyNew: $onlyNew, rating: $rating) {
-            id,
-            name,
-            added,
-            visited,
-            rating,
-            tags,
-            neighborhood {
-                id,
-                name,
-                level
-            },
-            notes
-        }
-    }`;
+    import { apolloClient } from '../apollo';
     
     export default {
         name: 'restList',
@@ -63,14 +53,21 @@
         computed: {
             ...mapGetters({
                 restaurants: 'restaurants/restaurants',
-            })
+            }),
+            loading() {
+                return false;
+            }
         },
         methods: {
             maximizeFilterBar() {
                 this.maxFilterBar = !this.maxFilterBar;
             },
             reallyFetch() {
-                this.fetch(this.filterString, this.filterVisited, this.filterRating);
+                this.fetch({
+                    keyword: this.filterString,
+                    onlyNew: this.filterVisited,
+                    rating: this.filterRating
+                });
             },
             ...mapActions({
                 fetch: 'restaurants/fetchRestaurants'
@@ -90,31 +87,6 @@
                 this.reallyFetch();
             }
         }
-        /*
-        apollo: {
-            restaurants: {
-                query() {
-                    return restaurantQuery
-                },
-                variables() {
-                    return {
-                        keyword: this.filterString,
-                        onlyNew: this.filterVisited,
-                        rating: this.filterRating * 2
-                    }
-                }
-            }
-        },
-        mounted() {
-            this.$store.dispatch('restaurants/fetchRestaurants', {
-                keyword: this.filterString,
-                onlyNew: this.filterVisited,
-                rating: this.filterRating
-            });
-            //this.$apollo.queries.restaurants.refetch();
-        },
-        */
-
     }
 </script>
 
