@@ -27,7 +27,7 @@
 
 <style scoped>
     .mapContainer {
+        height: 50vh;
         width: 100%;
-        height: 500px;
     }
 </style>

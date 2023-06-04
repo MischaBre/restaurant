@@ -1,10 +1,14 @@
 <template>
-    <div class="d-flex flex-row align-items-center rest-list-row">
-        <b-avatar :text="initialChar" :variant="restaurant.visited ? 'secondary' : 'primary'" class="m-2"></b-avatar>
-        <div class="m-2 h2 flex-fill">{{ restaurant.name }}</div>
-        <b-badge v-for="tag of restaurant.tags" :key="restaurant.id + tag" class="m-1">{{ tag }}</b-badge>
-        <b-form-rating v-if="restaurant.rating" v-model="rating" readonly no-border inline stars="5" class="m-2"></b-form-rating>
-        <div class="m-2">{{ neighborhood }}</div>
+    <div class="rest-list-row">
+        <div class="d-flex flex-wrap flex-row align-items-center">
+            <b-avatar :text="initialChar" :variant="restaurant.visited ? 'secondary' : 'primary'" class="mx-2"></b-avatar>
+            <div class="m-2 h4 flex-fill" :class="{'text-primary': !restaurant.visited}">{{ restaurant.name }}</div>
+            <div class="mx-2">{{ neighborhood }}</div>
+        </div>
+        <div>
+            <b-badge v-for="tag of restaurant.tags" :key="restaurant.id + tag" class="mx-1">{{ tag }}</b-badge>
+        </div>
+        <b-form-rating v-if="restaurant.rating" v-model="restaurant.rating" readonly no-border inline :variant="restaurant.rating > 5 ? 'success' : 'danger'" stars="5" ></b-form-rating>
     </div>
 </template>
 

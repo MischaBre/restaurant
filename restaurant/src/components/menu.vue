@@ -1,6 +1,6 @@
 <template>
     <div class="menubar bg-dark text-white">
-        <h1>Lieblingsrestaurants</h1>
+        <h2>Lieblingsrestaurants</h2>
         <b-nav pills align="right">
             <b-nav-item v-for="item of menuitems" :key="item.name" :active="activeitem == item.name" @click="navClick(item.name)">
                 <b-icon :icon="item.icon"></b-icon>
@@ -10,24 +10,23 @@
 </template>
 
 <script>
+    import { mapGetters } from 'vuex';
     export default {
         name: 'menubar',
         data() {
             return {};
         },
         computed: {
-            menuitems() {
-                return this.$store.getters.menuitems;
-            },
-            activeitem() {
-                return this.$store.getters.activeitem;
-            }
+            ...mapGetters({
+                menuitems: 'navigation/menuitems',
+                activeitem: 'navigation/activeitem',
+            })
         },
         methods: {
             navClick: function (payload) {
-                this.$store.commit('activeitem', payload);
+                this.$store.commit('navigation/activeitem', payload);
             }
-        }
+        },
 
     }
 </script>

@@ -7,6 +7,7 @@ from restlist.models import Restaurant, Neighborhood
 import datetime
 from django.utils import timezone
 
+import json
 
 class CreateRestaurant(graphene.Mutation):
     class Arguments:
@@ -26,7 +27,8 @@ class CreateRestaurant(graphene.Mutation):
         if name is None or tags is None or geolocation is None:
             raise GraphQLError("not enough parameters provided")
         
-        nHood = Neighborhood.objects.filter(name=neighborhood)
+        geolocStr = json.dumps(geolocation)
+        nHood = Neighborhood.objects.get(name=neighborhood)
         if nHood is None:
             raise GraphQLError("no known Neighborhood selected")
         
@@ -35,11 +37,11 @@ class CreateRestaurant(graphene.Mutation):
             name=name,
             added=added,
             tags=tags,
-            geolocation=geolocation, 
+            geolocation=geolocation,
             visited=visited,
             rating=rating,
             notes=notes)
-        restaurant.save()
+
         restaurant.neighborhood.add(nHood)
         ok = True
         return CreateRestaurant(restaurant=restaurant, ok=ok)

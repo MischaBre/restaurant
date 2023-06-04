@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="container-sm">
         <b-input-group class="d-flex align-items-center">
             <template #prepend>
                 <b-icon icon="search" class="border-circle m-2"/>
@@ -26,8 +26,27 @@
 </template>
 
 <script>
+    import { mapGetters, mapActions } from 'vuex';
     import gql from 'graphql-tag'
     import restaurantListItem from './restaurant-list-item.vue';
+
+    const restaurantQuery = gql`query restaurants($keyword: String, $onlyNew: Boolean, $rating: Int) {
+        restaurants: restaurantByKeyword(keyword: $keyword, onlyNew: $onlyNew, rating: $rating) {
+            id,
+            name,
+            added,
+            visited,
+            rating,
+            tags,
+            neighborhood {
+                id,
+                name,
+                level
+            },
+            notes
+        }
+    }`;
+    
     export default {
         name: 'restList',
         components: {
@@ -35,44 +54,48 @@
         },
         data() {
             return {
-                restaurants: [],
                 filterString: null,
                 filterVisited: false,
                 filterRating: 0,
                 maxFilterBar: false
             };
         },
-        //computed: {
-        //    restaurants() {
-        //        return this.$store.getters.restaurants;
-        //    }
-        //},
-        //mounted() {
-        //    this.$store.dispatch('fetchAllRestaurantsAsync');
-        //},
+        computed: {
+            ...mapGetters({
+                restaurants: 'restaurants/restaurants',
+            })
+        },
         methods: {
             maximizeFilterBar() {
                 this.maxFilterBar = !this.maxFilterBar;
-            }
+            },
+            reallyFetch() {
+                this.fetch(this.filterString, this.filterVisited, this.filterRating);
+            },
+            ...mapActions({
+                fetch: 'restaurants/fetchRestaurants'
+            }),
         },
+        mounted() {
+            this.reallyFetch();
+        },
+        watch: {
+            filterString() {
+                this.reallyFetch();
+            },
+            filterVisited() {
+                this.reallyFetch();
+            },
+            filterRating() {
+                this.reallyFetch();
+            }
+        }
+        /*
         apollo: {
             restaurants: {
-                query: gql`query restaurants($keyword: String, $onlyNew: Boolean, $rating: Int) {
-                    restaurants: restaurantByKeyword(keyword: $keyword, onlyNew: $onlyNew, rating: $rating) {
-                        id,
-                        name,
-                        added,
-                        visited,
-                        rating,
-                        tags,
-                        neighborhood {
-                            id,
-                            name,
-                            level
-                        },
-                        notes
-                    }
-                }`,
+                query() {
+                    return restaurantQuery
+                },
                 variables() {
                     return {
                         keyword: this.filterString,
@@ -81,7 +104,16 @@
                     }
                 }
             }
-        }
+        },
+        mounted() {
+            this.$store.dispatch('restaurants/fetchRestaurants', {
+                keyword: this.filterString,
+                onlyNew: this.filterVisited,
+                rating: this.filterRating
+            });
+            //this.$apollo.queries.restaurants.refetch();
+        },
+        */
 
     }
 </script>

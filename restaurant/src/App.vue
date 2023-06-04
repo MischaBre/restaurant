@@ -8,10 +8,12 @@
 </template>
 
 <script>
-	import restMap from './components/map.vue';
+	import restMap from './components/mainMap.vue';
 	import restList from './components/list.vue';
 	import restAdd from './components/add.vue';
 	import menubar from './components/menu.vue';
+
+	import { mapGetters } from 'vuex';
 	
 	export default {
 		name: 'App',
@@ -22,9 +24,9 @@
         	'restMap': restMap,
      	},
 		computed: {
-			activeitem() {
-				return this.$store.getters.activeitem;
-			}
+			...mapGetters({
+				activeitem: 'navigation/activeitem'
+			})
 		}
 	}
 </script>
